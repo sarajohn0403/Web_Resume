@@ -6,7 +6,7 @@ async function registerSw()
 {
     if('serviceWorker' in navigator)
     {
-        navigator.serviceWorker.register('https://sarajohn0403.github.io/My_Web_Portfolio/sw.js')
+        navigator.serviceWorker.register('https://sarajohn0403.github.io/Web_Resume/sw.js')
             .then(registration => {
                 console.log("Serivce Worker Registered!", registration);
         }).catch(error => {
