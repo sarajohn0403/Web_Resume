@@ -19,7 +19,7 @@ self.addEventListener("install", e => {
                 "https://sarajohn0403.github.io/Web_Resume/skills.html",
                 "https://sarajohn0403.github.io/Web_Resume/contact.html",
                 "https://sarajohn0403.github.io/Web_Resume/manifest.json",
-                "https://sarajohn0403.github.io/Web_Resume/pwa.js",
+                "https://sarajohn0403.github.io/Web_Resume/js/index.js",
                 "https://sarajohn0403.github.io/Web_Resume/js/script.js",
                 "https://sarajohn0403.github.io/Web_Resume/js/style-switcher.js",
                 "https://sarajohn0403.github.io/Web_Resume/pdf/Journal_Certificate.pdf",
