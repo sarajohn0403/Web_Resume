@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-------===== Script Files ======--------->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="styles/style.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script type="text/javascript" src="json/fuel_Data.json"></script>
+<!-----== Project Title ===------->
+<title>Forecast chart</title>
+</head>
+
+<body>
+	<div class="chartCard">
+		<div class="chartBox">
+			<h3>Forecaster</h3>
+			<canvas id="myChart"></canvas>
+			
+			<form>
+			<label for="date">Pick a date</label>
+			<input type="date" id="date" name="date" value="2022-05-10" min="1996-01-01" max="2023-12-31" required />
+			<button type="button" id="scrollleft">&lt;</button>
+        <button type="button" id="scrollright">&gt;</button>  
+			
+			
+			<button id="click" onclick="updateChart()"> Display Chart </button> <br> <br><br>
+			<input type="radio" id="radiobtn1" name="fav_language" value="rb"><label for="radiobtn1">Historical Mode</label><br>
+			<input type="radio" id="radiobtn2" name="fav_language" value="rb" checked><label for="radiobtn2">Forecast </label><br>
+
+			</form>
+		</div>
+	</div>
+	<!----<p id="demo">hello</p> --> 
+
+	<script>
+		var loc=0;
+		var p=0;
+		function updateChart(){
+			
+		async function fetchData()
+			{
+			const url = 'json/fuel_Data.json';
+			const response = await fetch(url);
+			// wait until the request has been completed
+			const result = await response.json();
+			
+			//will save or store the data
+			return result;
+			};
+			fetchData().then(result => {
+			console.log(result);
+				
+			const LN=(result) => result.Year==2021 && result.Month=="September";
+			loc=result.findIndex(LN);
+			p=loc;
+			//loc=308;
+			
+			
+			console.log(p);
+		let demoChart = new Chart(myChart,
+		{
+			type: 'bar',
+			data: {
+				labels: [result[p].Month, result[p+1].Month, result[p+2].Month, result[p+3].Month, result[p+4].Month, result[p+5].Month,
+				result[p+6].Month, result[p+7].Month, result[p+8].Month, result[p+9].Month, result[p+10].Month, result[p+11].Month],
+			   
+			
+				datasets: [
+					{
+						label: 'Solid fuels (D7DW)',
+							   
+						data: [result[p].Solid, result[p+1].Solid, result[p+2].Solid, result[p+3].Solid, result[p+4].Solid, result[p+5].Solid,
+				result[p+6].Solid, result[p+7].Solid, result[p+8].Solid, result[p+9].Solid, result[p+10].Solid, result[p+11].Solid],
+						backgroundColor: 'rgba(21,7,91, 0.45)',
+						borderWidth: 1,
+						borderColor: 'rgb(21,7,91)' //blue
+					},
+					{
+						label: 'Gas (D7DU)',
+						data: [result[p].Gas, result[p+1].Gas, result[p+2].Gas, result[p+3].Gas, result[p+4].Gas, result[p+5].Gas,
+				result[p+6].Gas, result[p+7].Gas, result[p+8].Gas, result[p+9].Gas, result[p+10].Gas, result[p+11].Gas],
+						backgroundColor: 'rgba(255,127,80, 0.45)',
+						borderWidth: 1,
+						borderColor: 'rgb(255,127,80)' //peach
+					},
+					{
+						label: 'Electricity (D7DT)',
+						data: [result[p].Electricity, result[p+1].Electricity, result[p+2].Electricity, result[p+3].Electricity, result[p+4].Electricity, result[p+5].Electricity,
+				result[p+6].Electricity, result[p+7].Electricity, result[p+8].Electricity, result[p+9].Electricity, result[p+10].Electricity, result[p+11].Electricity],
+						backgroundColor: 'rgba(18, 187, 172, 0.8)', 
+						borderWidth: 1,
+						borderColor: 'green' //green
+					},
+					{
+						label: 'Liquid fuels (D7DV)',
+						data: [result[p].Liquid, result[p+1].Liquid, result[p+2].Liquid, result[p+3].Liquid, result[p+4].Liquid, result[p+5].Liquid,
+				result[p+6].Liquid, result[p+7].Liquid, result[p+8].Liquid, result[p+9].Liquid, result[p+10].Liquid, result[p+11].Liquid],
+						backgroundColor: 'rgba(247, 251, 114, 0.8)',
+						borderWidth: 1,
+						borderColor: 'rgba(249, 211, 13)' //yellow
+					}
+				]
+			}, 
+			options: {
+				scales: {
+					y: {
+						title: {
+							display: true, 
+							text: 'Fuel Cost (unit/ UK pence)',
+							font: {
+								size: 15
+							}
+						},
+						min: 00,
+						max: 400
+					},
+					x: {
+						title: {
+							display: true, 
+							text: 'Months',
+							font: {
+								size: 15
+							}
+						},
+						min: 00,
+						max: 11
+					}
+				},
+				plugins: {
+					title: {
+						display: true, 
+						text: 'Fuel Cost Comparison from 1996 - 2022',
+						//text: 'All costs are in UK pence',
+						font: {
+							size: 20
+						}
+					},
+					legend: {
+						position: 'top'
+					},
+				}
+			} 
+
+		})
+		
+	})
+	
+	};
+
+	
+	
+		  </script> 
+	
+	<script src="scripts/main.js"></script>
+	
+	
+</body>
+</html>

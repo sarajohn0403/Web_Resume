@@ -1,0 +1,704 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta name="theme-color" content="pink">
+    
+    <title> Web Portfolio </title>
+
+    <!--- ===== CSS Files ==== -----> 
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/skins/color-1.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+    
+    <link rel="manifest" href="manifest.json"> 
+    <link rel="apple-touch-icon" href="images/logo-192x192.png">
+
+    <!--- ===== Style Switcher ==== ----->
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled> 
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled> 
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled> 
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled> 
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled> 
+    <link rel="stylesheet" href="css/style-switcher.css">
+
+</head>
+<body>
+    <div id="menu-bars" class="fas fa-bars"> </div>
+    
+    <!--- ===== Main Container Start ==== -----> 
+    <div class="main-container">
+        <!--- ===== Sidebar Start ==== ----->
+        <div class="side">
+            <div class="logo"> 
+                <img src="images/logo-no-background_1.png" alt="">
+            </div>
+            <ul class="nav">
+                <li><a href="index.html" class="active"><i class="fa fa-home"></i> Home </a></li>
+                <li><a href="about.html"><i class="fa fa-user"></i> About </a></li> 
+                <li><a href="education.html"><i class="fa fa-list"></i> Education </a></li> 
+                <li><a href="work.html"><i class="fa fa-briefcase"></i> Work Experience </a></li> 
+                <li><a href="testimonials.html"><i class="fa fa-comments"></i> Testimonials </a></li> 
+                <li><a href="skills.html"><i class="fa fa-laptop"></i> Skills Page </a></li> 
+                <li><a href="contact.html"><i class="fa fa-envelope"></i> Contact </a></li> 
+            </ul>
+            <p> Email: sara99john@gmail.com </p>
+        </div>
+        <!--- ===== Sidebar End ==== -----> 
+        
+        <!--- ===== Main Content Start ==== ----->
+        <div class="main-content">
+            <!--- ===== Home section Start ==== ----->
+            <section class="home-page section" id="home">
+                <div class="container">
+                    <div class="row">
+                        <div class="home-info padd-15">
+                            <h3 class="intro"> Hello, my name is <span class="name"> Sara Susan John </span></h3>
+                            <!--- <h3 class="profession"> I am a <span class="pro-title"> Software Engineer </span></h3> ----->
+                            <p> 
+                                A final year MSc Software Engineering student with knowledge in Web Application Programming & Web Design, 
+                                I am looking for an opportunity, where I can gain experience and develop my career as a Web Developer. 
+                                As a fresher with 1 year experience and interest in Web Development, I would like to fully utilize my 
+                                creative skills and innovative thoughts while making a significant contribution to the organization. 
+                            </p>
+                            <a href="#about" class="btn about-me"> More About Me</a>
+                        </div>
+                        <div class="home-image padd-15">
+                            <picture>
+                                <img src="images/Profile_pic_new.jpeg" alt="">
+                            </picture> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--- ===== Home section End ==== -----> 
+
+            <!--- ===== About section Start ==== ----->
+            <section class="about-page section" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2> About Me </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                    <!----  <div class="row">
+                                <div class="about-text padd-15">
+                                    <h3> I am Sara a <span> Software Engineer </span></h3>                                    
+                                </div>
+                            </div> --->  
+                            <div class="row">
+                                <!----- ======= Personal Details ====== ----->
+                                <div class="personal-info padd-15"> 
+                                    <h4> Personal Info </h4> 
+                                    <div class="row">
+                                        <div class="info-item padd-15">
+                                            <p>Date of Birth : <span>04 March 1999</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Age : <span>23</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Email : <span>sara99john@gmail.com</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Degree : <span>Computer Science</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Work Experience : <span> 1 year </span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Current Status : <span>Student</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!----- ===== Personal Competencies ===== ----->
+                                <div class="personal-comp padd-15"> 
+                                    <h4> Personal Competencies </h4>  
+                                    <div class="row">
+                                        <div class="info-item padd-15">
+                                            <p>1. Decision making</p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>4. Project Coordination</p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>2. Leadership</p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>5. Teamwork</p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>3. Public Speaking</p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>6. Problem Solving</p>
+                                        </div>
+                                    </div> 
+                                </div> 
+                            </div>
+
+                            <!----- ======= Technical Skills ====== ----->
+                            <div class="row">
+                                <div class="skill-title">
+                                    <h4> Technical Skills </h4>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <!----- ======= Skills Column 1 ====== ----->
+                                <div class="skills padd-15"> 
+                                    <div class="row">
+                                        <div class="skill-item padd-10">
+                                            <h5> <i class="fal fa-arrow-right-long"></i> HTML & CSS </h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 85%;"></div>
+                                                <div class="skill-percent">85%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-10">
+                                            <h5> Java </h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 85%;"></div>
+                                                <div class="skill-percent">85%</div>
+                                            </div>
+                                        </div>
+                                            <div class="skill-item padd-10">
+                                                <h5> JavaScript</h5>
+                                                <div class="progress">
+                                                    <div class="progress-in" style="width: 80%;"></div>
+                                                    <div class="skill-percent">80%</div>
+                                            </div>
+                                        </div> 
+                                        <div class="skill-item padd-10">
+                                            <h5> Web Development</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 70%;"></div>
+                                                <div class="skill-percent">70%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-10">
+                                            <h5> MySQL</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 65%;"></div>
+                                                <div class="skill-percent">65%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <!----- ======= Skills Column 2 ====== ----->
+                                <div class="skills padd-15"> 
+                                    <div class="row">
+                                        <div class="skill-item padd-10">
+                                            <h5> Game Design Fundamentals </h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 65%;"></div>
+                                                <div class="skill-percent">65%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-10">
+                                            <h5> Python</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 60%;"></div>
+                                                <div class="skill-percent">60%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-10">
+                                            <h5> Php</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 60%;"></div>
+                                                <div class="skill-percent">60%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-10">
+                                            <h5> Enterprise Cloud Computing</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 50%;"></div>
+                                                <div class="skill-percent">50%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-10">
+                                            <h5> Mobile App Development</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 50%;"></div>
+                                                <div class="skill-percent">50%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <!--- ===== Download CV button ==== ----->
+                            <div class="row">
+                                <div class="buttons padd-15">
+                                    <a href="pdf/Sara_CV.pdf" class="btn"> Download CV </a>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--- ===== About section End ==== ----->
+
+            <!--- ===== Education section Start ==== ----->
+            <section class="education-page section" id="education">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Education</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!---- Education ----> 
+                        <div class="academics padd-15"> 
+                            <h3 class="title"> Academic Profile </h3>
+                            <div class="row">
+                                <div class="timeline-box padd-15">
+                                    <div class="timeline shadow-dark">
+                                        <!---- timeline item ----> 
+                                        <div class="timeline-item">
+                                            <i class="fas fa-graduation-cap timeline-icon"></i>
+                                            <h3 class="timeline-date">
+                                                <i class="fa fa-calendar"> 2022 - 2023 </i>
+                                            </h3>
+                                            <h3 class="timeline-title"> MSc Software Engineering </h3>
+                                            <p class="timeline-text"> I am currently pursuing Master's in Software 
+                                                Engineering at Staffordshire University, Stoke-on-Trent. 
+                                            </p>
+                                        </div>
+                                        <!---- timeline item ----> 
+                                        <div class="timeline-item">
+                                            <i class="fas fa-graduation-cap timeline-icon"></i>
+                                            <h3 class="timeline-date">
+                                                <i class="fa fa-calendar"> 2016 - 2020 </i>
+                                            </h3>
+                                            <h3 class="timeline-title"> BTech in Computer Science & Engineering </h3>
+                                            <p class="timeline-text"> I completed my Bachelors in Computer Science from 
+                                                APJ Abdul Kalam Technological University, Kerala, India. 
+                                            </p>
+                                        </div>
+                                        <!---- timeline item ----> 
+                                        <div class="timeline-item">
+                                            <i class="fas fa-graduation-cap timeline-icon"></i>
+                                            <h3 class="timeline-date">
+                                                <i class="fa fa-calendar"> 2015 - 2016 </i>
+                                            </h3>
+                                            <h3 class="timeline-title"> Year 12 </h3>
+                                            <p class="timeline-text"> I completed my schooling from GEMS Our Own Indian 
+                                                School, Dubai, U.A.E. 
+                                            </p>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <style>
+                            table, th, td 
+                            {
+                                border: 1px solid;
+                            }
+                            td 
+                            {
+                                text-align: center;
+                            }
+                            th
+                            {
+                                width: 150px;
+                            }
+                        </style>
+    
+                        <div class="table padd-15"> 
+                            <h3 class="title"> Publication </h3>
+                            <div class="info-item padd-15">
+                                <p text-align="justify"> An automated slide generator will help to save time, effort and subsequently cost. 
+                                    The proposed system accepts research papers in PDF format as input and helps to generate 
+                                    the corresponding presentation slides. Papers and slides are learned and trained by 
+                                    Bidirectional Encoder Representations from Transformers (BERT) model. </p>
+                            </div>
+                            <table style="width:100%">
+                                <tr>
+                                    <th colspan="2"> LEARNING BASED SLIDE GENERATOR </th> 
+                                        
+                                </tr>
+                                <tr>
+                                    <th>Published by:</th>
+                                    <td>International Journal of Engineering Research & Technology (IJERT)</td>
+                                </tr>
+                                <tr>
+                                    <th>Paper ID:</th>
+                                    <td> IJERTV9IS070415</td>
+                                </tr>
+                                <tr>
+                                    <th>Volume & Issue:</th>
+                                    <td>Volume 09, Issue 07 - 25th July, 2020</td>
+                                </tr>
+                                <tr>
+                                    <th>DOI: </th>
+                                    <td>http://dx.doi.org/10.17577/IJERTV9IS070415</td>
+                                </tr>
+                            </table>
+                            
+                            <!--- ===== View Publication button ==== ----->
+                            <div class="row">
+                                <div class="buttons padd-15">
+                                    <a href="pdf/Journal_Copy.pdf" class="btn"> View Publication </a>
+                                </div>
+                                <div class="buttons padd-15">
+                                    <a href="pdf/Journal_Certificate.pdf" class="btn"> View Certificate </a>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>  
+                </div>
+            </section>
+            <!--- ===== Education section End ==== ----->
+
+            <!--- ===== Professional History section Start ==== ----->
+            <section class="work-page section" id="work">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Work Experience</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!---- Work Experience ----> 
+                        <div class="work padd-15"> 
+                            <h3 class="title"> Professional History </h3>
+                            <div class="row">
+                                <div class="timeline-box padd-15">
+                                    <div class="timeline shadow-dark">
+                                        <!---- timeline item ----> 
+                                        <div class="timeline-item">
+                                            <i class="fas fa-briefcase timeline-icon"></i>
+                                            <h3 class="timeline-date">
+                                                <i class="fa fa-calendar"> August 2022 - September 2022 </i>
+                                            </h3>
+                                            <h3 class="timeline-title"> Staffordshire Regional Access Center</h3>
+                                            <p class="timeline-text"> I worked with Student Inclusion Team as a Clerical Assistant 
+                                                during my summber break at the University.  
+                                            </p>
+                                        </div>
+                                        <!---- timeline item ----> 
+                                        <div class="timeline-item">
+                                            <i class="fas fa-briefcase timeline-icon"></i>
+                                            <h3 class="timeline-date">
+                                                <i class="fa fa-calendar"> 2020 - 2021 </i>
+                                            </h3>
+                                            <h3 class="timeline-title"> WhiteHat Jr</h3>
+                                            <p class="timeline-text">  I worked as a coding instructor, conducting live 1:1 online sessions 
+                                                for school students in the age group 10-15 years. Taught students core programming concepts 
+                                                through animations, games and app development using JavaScript and other programming languages. 
+                                            </p>
+                                        </div>
+                                        <!---- timeline item ----> 
+                                        <div class="timeline-item">
+                                            <i class="fas fa-briefcase timeline-icon"></i>
+                                            <h3 class="timeline-date">
+                                                <i class="fa fa-calendar"> 2020 - 2021 </i>
+                                            </h3>
+                                            <h3 class="timeline-title"> Byjus Future School </h3>
+                                            <p class="timeline-text">  I worked as a mathematics instructor, conducting live 1:1 online sessions 
+                                                for school students in the age group 10-15 years. Taught global students core mathematical concepts 
+                                                through animations, and visual learning. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--- ===== Professional History section End ==== ----->
+
+            <!--- ===== Testimonials section Start ==== ----->
+            <section class="testimonial-page section" id="testimonials">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2> Testimonials </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!--- == Testimonial info Start == --->
+                        <div class="testimonial-info padd-15">
+                            <div class="testimonial-info-inner">
+                                <img src="images/icon.png">
+                                <h4> Swapnaja Ma'am </h4>
+                                <h5> Mentor at WhiteHat </h5>
+                                <p> "Sara is meticulous and work driven to deliver results, without fail."
+                                </p>
+                            </div>
+                        </div>
+                        <!--- == Testimonial info End == --->
+
+                        <!--- == Testimonial info Start == --->
+                        <div class="testimonial-info padd-15">
+                            <div class="testimonial-info-inner">
+                                <img src="images/icon_2.png">
+                                <h4> Madhuri </h4>
+                                <h5> Colleague at WhiteHat </h5>
+                                <p> "Sara is passionate about teaching and handles her students well."
+                                </p>
+                            </div>
+                        </div>
+                        <!--- == Testimonial info End == --->
+
+                        <!--- == Testimonial info Start == --->
+                        <div class="testimonial-info padd-15">
+                            <div class="testimonial-info-inner">
+                                <img src="images/icon_3.jpg">
+                                <h4> Devangi </h4>
+                                <h5> Student at WhiteHat </h5>
+                                <p> "Sara ma'am has a great way of teaching concepts that are challenging." 
+                                </p>
+                            </div>
+                        </div>
+                        <!--- == Testimonial info End == --->
+
+                        <!--- == Testimonial info Start == --->
+                        <div class="testimonial-info padd-15">
+                            <div class="testimonial-info-inner">
+                                <img src="images/icon_4.jpg">
+                                <h4> Jenny </h4>
+                                <h5> Manager at the Student Inclusion Team </h5>
+                                <p> "During the short term that Sara assisted us, it was a delight to see her
+                                    work passionately to accomplish the set goals." 
+                                </p>
+                            </div>
+                        </div>
+                        <!--- == Testimonial info End == --->
+
+                        <!--- == Testimonial info Start == --->
+                        <div class="testimonial-info padd-15">
+                            <div class="testimonial-info-inner">
+                                <img src="images/icon_5.jpg">
+                                <h4> Kierri </h4>
+                                <h5> Mentor & Colleague at the Student Inclusion Team </h5>
+                                <p> "It was a joy to work with Sara and mentor her. Her enthusiasm to work and 
+                                    coordinate the tasks well was something we all learnt from Sara."
+                                </p>
+                            </div>
+                        </div>
+                        <!--- == Testimonial info End == --->
+
+                        <!--- == Testimonial info Start == --->
+                        <div class="testimonial-info padd-15">
+                            <div class="testimonial-info-inner">
+                                <img src="images/icon_6.png">
+                                <h4> Des </h4>
+                                <h5> Lecturer </h5>
+                                <p> "A pro-active student who loves to interact and share her ideas, Sara constantly 
+                                    pushes herself to aim high and do better."
+                                </p>
+                            </div>
+                        </div>
+                        <!--- == Testimonial info End == --->
+                    </div>
+                </div>
+            </section>
+            <!--- ===== Testimonials section End ==== ----->
+
+            <!--- ===== Skills portfolio section End ==== ----->
+            <section class="portfolio-page section" id="skills">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2> Skills Page </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="portfolio-heading padd-15">
+                            <h2> My Latest Projects : </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!--- ===== portfolio item start ==== ----->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/converter_6.png" alt="">
+                                    <h3> Project 01 - Currency Converter </h3>
+                                    <div class="icons">
+                                        <a href="Currency_converter/index.html" class="fas fa-link"> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--- ===== portfolio item start ==== ----->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/chart.jpg" alt="">
+                                    <h3> Project 02 - Fuel Forecaster </h3>
+                                    <div class="icons">
+                                        <a href="ChartFinal/index.html" class="fas fa-link"> </a> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--- ===== Skills portfolio section End ==== ----->
+
+            <!--- ===== Contact page section Start ==== ----->
+            <section class="contact-page section" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2> Contact Me </h2>
+                        </div>
+                    </div>
+                    <h3 class="contact-title padd-15"> Have Any Questions? </h3>
+                    <h4 class="contact-sub-title padd-15"> Connect with Me! </h4>
+                    <div class="row">
+                        <!--- ===== Contact page info item Start ==== ----->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                            <h4> ADDRESS</h4>
+                            <p> England </p>
+                        </div>
+                        <!--- ===== Contact page info item End ==== -----> 
+
+                        <!--- ===== Contact page info item Start ==== ----->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-phone"></i></div>
+                            <h4> PHONE NUMBER</h4>
+                            <p> +44 XXX XXXX XXX</p>
+                        </div>
+                        <!--- ===== Contact page info item End ==== ----->
+                        
+                        <!--- ===== Contact page info item Start ==== ----->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-envelope"></i></div>
+                            <h4> EMAIL</h4>
+                            <p> sara99john@gmail.com</p>
+                        </div>
+                        <!--- ===== Contact page info item End ==== ----->
+
+                        <!--- ===== Contact page info item Start ==== ----->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-globe-europe"></i></div>
+                            <h4> LINKEDIN </h4>
+                            <p> www.linkedin.com/in/sara-susan-john-624ba3161/</p>
+                        </div>
+                        <!--- ===== Contact page info item End ==== -----> 
+                    </div>
+
+                    <h3 class="contact-title padd-15"> Send me your queries </h3>
+                    <!--- ===== Contact page Form ==== -----> 
+                    <form name="form1" action="#contact">
+                        <div class="row">
+                            <div class="contact-form padd-15">
+                                <div class="row">
+                                    <!--- ===== Enter your name ==== ----->
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" name="text1" class="form-control" placeholder="Enter your name" required onkeypress="return (event.charCode > 64 && event.charCode <91) || (event.charCode > 96 && event.charCode <123) || (event.charCode == 32)">
+                                            <span id="errormsg"></span><br>
+                                        </div>
+                                    </div>
+                                    <!--- ===== Enter your email id ==== ----->
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Enter your email id" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--- ======== Enter your email id ======== ----->
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Enter the subject" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--- ======== Enter your message ======== ----->
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <textarea name="" class="form-control" id="message" maxlength="500" placeholder="Enter Your Message" require ></textarea>
+                                            <div id="the-count">
+                                                <span id="current">0</span>
+                                                <span id="maximum">/ 500</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--- ======== Captcha Validation ======== ----->
+                                <div class="center">
+                                    <h1 id="captchaHeading">
+                                        Captcha Validator
+                                    </h1>
+                                    <div id="captchaBackground">
+                                        <canvas id="captcha">captcha text</canvas>
+                                        <input id="textBox" type="text" name="text">
+                                        <div id="buttons">
+                                <!--- ===  <input id="submitButton" type="submit">  == -----> 
+                                            <button id="refreshButton" type="submit">Refresh</button>
+                                        </div>
+                                        <span id="output"></span>
+                                    </div>
+                                </div>
+
+                                <!--- ======== Submit Button ======== ----->
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <button type="submit" id="submitButton" class="btn"> Submit </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section> 
+            <!--- ===== Contact page section End ==== ----->
+
+            <!--- ===== Footer section Start ==== ----->
+            <section class="footer"> 
+                <div class="icons"> 
+                    <a href="https://github.com/sarajohn0403"> <i class="fab fa-github fa-2x"></i> </a>
+                    <a href="https://www.linkedin.com/in/sara-susan-john-624ba3161/"> <i class="fab fa-linkedin fa-2x"></i> </a>
+                    
+                </div> 
+                <i class="fas fa-copyright"> Created By Sara Susan John | <span> All Rights Reserved!</span> </i>
+            </section> 
+            <!--- ===== Footer section End ==== ----->
+        </div>
+        <!--- ===== Main Content End ==== -----> 
+    </div>
+    <!--- ===== Main Container End ==== • -----> 
+
+    <!--- ===== Style Switcher Start ==== ----->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas"></i>
+        </div>
+        <h4> Color Theme </h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActivityStyle('color-1')"></span>
+            <span class="color-2" onclick="setActivityStyle('color-2')"></span>
+            <span class="color-3" onclick="setActivityStyle('color-3')"></span>
+            <span class="color-4" onclick="setActivityStyle('color-4')"></span>
+            <span class="color-5" onclick="setActivityStyle('color-5')"></span>
+        </div>
+    </div>
+    <!--- ===== Style Switcher End ==== ----->
+
+    <!--- ===== JavaScript Files ==== -----> 
+    <script src="js/index.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/style-switcher.js"> </script>
+    
+</body>
+</html> 
+
+

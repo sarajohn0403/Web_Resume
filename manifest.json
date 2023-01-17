@@ -1,0 +1,20 @@
+{
+    "name": "Web Resume", 
+    "short_name": "Web Resume", 
+    "description": "An online portfolio",
+    "id": "https://sarajohn0403.github.io/My_Web_Portfolio/",
+    "start_url": "https://sarajohn0403.github.io/My_Web_Portfolio/", 
+    "background_color": "lightblue", 
+    "theme_color": "pink", 
+    "orientation": "any",
+    "display": "standalone", 
+    
+    "icons": [
+        {
+            "src": "https://sarajohn0403.github.io/My_Web_Portfolio/images/logo-512x512.png", 
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
