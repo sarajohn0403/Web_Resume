@@ -59,7 +59,6 @@ function scrollLeft()
 }
 
 selectedYear.addEventListener("change",updateChart); 
-console.log(selectedYear.value);
 
 //Update chart function 
 function updateChart()
