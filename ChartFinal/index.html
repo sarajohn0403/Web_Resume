@@ -4,24 +4,24 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!------- ===== Script Files ====== ---------> 
+<!-- ===== Script Files ====== --> 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <link rel="stylesheet" href="styles/style.css">
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<!---== Project Title ===----> 
+<!-- == Project Title === --> 
 <title>Forecaster</title>
 </head>
 
 <body onload="updateChart()">
-<!-----== Chart outline ===------->
+<!-- == Chart outline === -->
 	<div class="chartCard"> 
-		<!----== Historical Mode Chart ===----->
+		<!-- == Historical Mode Chart === -->
 		<div class="chartBox" id="1">
 			<h3>Forecaster</h3>
 			<canvas id="myChart"></canvas>
 			<form>
 				<label for="year">Select the year : </label> 
-			<!----== Drop down to select the year ===---->
+			<!-- == Drop down to select the year === -->
 				<select id="year">
 					<option value="1996">1996</option>
 					<option value="1997">1997</option>
@@ -52,16 +52,16 @@
 					<option value="2022">2022</option>
 				</select> 
 			
-				<!-----==== Forward & backward scrollers =====------->
+				<!-- ==== Forward & backward scrollers ===== -->
 				<button type="button" class="btn" id="scrollleft"> &lt; Prev </button>
 				<button type="button" class="btn" id="scrollright"> Next &gt; </button>  				
 				<br> <br> 
 
-				<!-----== Button for mode switching ===------->
+				<!-- == Button for mode switching === -->
 				<button type="button" class= "btn1" id="switch-chart"> Switch to Forecast mode </button> 
 				<button type="button" class= "btn1" id="switch-chart2"> Switch to Historical mode </button> 
 				<br> <br>
-				<!-----== Error alert message ===------->
+				<!-- == Error alert message === -->
 				<div id="error" style="color: crimson;"> </div>
 
 			</form>
