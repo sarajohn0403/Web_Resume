@@ -668,6 +668,20 @@ h3.profession
     margin-top: 5px; 
     /*background-color: #7FFF00; */
 }
+.education-page .table.table
+{
+    border: 1px solid;
+}
+.education-page .table.th
+{
+    border: 1px solid;
+    width: 150px;
+}
+.education-page .table.td
+{
+    border: 1px solid;
+    text-align: center;
+}
 .education-page .table h3.title
 {
     font-size: 22px;
