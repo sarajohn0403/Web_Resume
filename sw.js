@@ -3,7 +3,6 @@ self.addEventListener("install", e => {
     e.waitUntil(
         caches.open("static").then(cache => {
             return cache.addAll(["https://sarajohn0403.github.io/Web_Resume/", 
-                "https://sarajohn0403.github.io/Web_Resume/sw.js",
                 "https://sarajohn0403.github.io/Web_Resume/css/style.css", 
                 "https://sarajohn0403.github.io/Web_Resume/css/style-switcher.css",
                 "https://sarajohn0403.github.io/Web_Resume/css/skins/color-1.css", 
@@ -18,6 +17,7 @@ self.addEventListener("install", e => {
                 "https://sarajohn0403.github.io/Web_Resume/testimonials.html",
                 "https://sarajohn0403.github.io/Web_Resume/skills.html",
                 "https://sarajohn0403.github.io/Web_Resume/contact.html",
+                "https://sarajohn0403.github.io/Web_Resume/sw.js",
                 "https://sarajohn0403.github.io/Web_Resume/manifest.json",
                 "https://sarajohn0403.github.io/Web_Resume/js/index.js",
                 "https://sarajohn0403.github.io/Web_Resume/js/script.js",
